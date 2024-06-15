@@ -18,7 +18,7 @@ const Group = ({ index, group }) => {
   return (
     <div>
       <h2>
-        Group: {group.from} to {group.to}
+        Group {group.groupNumber}: {group.from} to {group.to}
       </h2>
       <div className="allcontent">
         <button onClick={handleDelete} className="deletebtn">
@@ -30,7 +30,8 @@ const Group = ({ index, group }) => {
         </button>
 
         <div className="inputcontentbox">
-          <h4>Group 1</h4>
+          <h4>Group {group.groupNumber}</h4>{" "}
+          {/* Updated to include group number */}
           <input
             type="number"
             name="from"
@@ -39,13 +40,11 @@ const Group = ({ index, group }) => {
             min="1"
             max="10"
           />
-
           <link
             rel="stylesheet"
             href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
           />
           <span className="material-symbols-outlined">arrow_right_alt</span>
-
           <input
             type="number"
             name="to"
@@ -57,7 +56,7 @@ const Group = ({ index, group }) => {
         </div>
       </div>
       <ul>
-        {group.from < group.to ? (
+        {group.from < group.to && group.to <= 10 && group.from >= 1 ? (
           group.status.map((item) => (
             <li key={item.id}>
               Item {item.id}: {item.completed ? "Done" : "Not Done"}
@@ -75,6 +74,7 @@ const Group = ({ index, group }) => {
 Group.propTypes = {
   index: PropTypes.number.isRequired,
   group: PropTypes.shape({
+    groupNumber: PropTypes.number.isRequired, // Added groupNumber prop type
     from: PropTypes.number.isRequired,
     to: PropTypes.number.isRequired,
     status: PropTypes.arrayOf(

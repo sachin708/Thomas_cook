@@ -1,72 +1,73 @@
 
+
 .material-symbols-outlined{
-   color: rgb(63, 63, 216);
-}
-
-.deletebtn{
-    border: none;
-    background-color: white;
-}
-
-.allcontent{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-   /* border: 1px solid red; */
-   width: 24%;
-}
-
-.inputcontentbox{
-    border: 1px solid rgb(96, 60, 226);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 40px;
-    width: 82%;
-}
-
-input{
-    height: 35.5px;
-    border: 0.1px solid rgb(96, 60, 226);
-}
-
-@media all and (min-width: 400px) and (max-width:1100px) {
-    
-    .allcontent{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       width: 44%;
+    color: rgb(63, 63, 216);
+ }
+ 
+ .deletebtn{
+     border: none;
+     background-color: white;
+ }
+ 
+ .allcontent{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    /* border: 1px solid red; */
+    width: 24%;
+ }
+ 
+ .inputcontentbox{
+     border: 1px solid rgb(96, 60, 226);
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     height: 40px;
+     width: 82%;
+ }
+ 
+ input{
+     height: 35.5px;
+     border: 0.1px solid rgb(96, 60, 226);
+ }
+ 
+ @media all and (min-width: 400px) and (max-width:1100px) {
      
-    }
-    .inputcontentbox{
-        border: 1px solid rgb(96, 60, 226);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        height: 40px;
-        width: 82%;
-    }
-}
-
-@media all and (min-width: 220px) and (max-width:399px) {
-    
-    .allcontent{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-       width: 100%;
+     .allcontent{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+        width: 44%;
+      
+     }
+     .inputcontentbox{
+         border: 1px solid rgb(96, 60, 226);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         height: 40px;
+         width: 82%;
+     }
+ }
+ 
+ @media all and (min-width: 220px) and (max-width:399px) {
      
-    }
-    .inputcontentbox{
-        border: 1px solid rgb(96, 60, 226);
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 96%;
-    }
-    input{
-        height: 37.5px;
-        border: 0.1px solid rgb(96, 60, 226);
-    }
-}
+     .allcontent{
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+        width: 100%;
+      
+     }
+     .inputcontentbox{
+         border: 1px solid rgb(96, 60, 226);
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         width: 96%;
+     }
+     input{
+         height: 37.5px;
+         border: 0.1px solid rgb(96, 60, 226);
+     }
+ }
