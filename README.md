@@ -26,6 +26,7 @@ The project folder structure is as follows:
 php
 Copy code
 Thomas_cook/
+</br>
 Frontned
 │
 ├── public/            # Static assets and index.html
