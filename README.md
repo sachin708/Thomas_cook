@@ -28,17 +28,30 @@ Copy code
 Thomas_cook/
 </br>
 Frontned
+</br>
 │
+</br>
 ├── public/            # Static assets and index.html
+</br>
 ├── src/               # Source code
+</br>
 │   ├── actions/       # Redux action creators
+</br>
 │   ├── components/    # React components
+</br>
 │   ├── reducers/      # Redux reducers
+</br>
 │   ├── App.jsx        # Main application component
+</br>
 │   ├── index.js       # Entry point
+</br>
 │   └── ...            # Other application files
+</br>
 │
+</br>
 ├── package.json       # NPM package configuration
+</br>
 └── README.md          # Project documentation
+</br>
 
 # Video Link
